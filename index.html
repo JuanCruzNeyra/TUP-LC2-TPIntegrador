@@ -7,13 +7,17 @@
   <title>TUP LC2 - TP Integrador - Cine</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>
       <!--Titulo Cabecera-->
+      <img src="img/IconoCine.png" alt="IconoCine">
       <span>Cartelera de Cine</span>
+
     </h1>
     <nav>
       <!--Menu Superior-->
@@ -28,32 +32,69 @@
 
   <main>
     <h2>Últimas Películas en Cartelera</h2>
-    </section>
+    <section id="form-movie-new">
+      <!--Seccion para agregar una palicula favorita por codigo-->
+      <form action="favorities.html">
+        <p>Agregar película favorita por Código</p>
+        <input type="text" placeholder="Ingrese el código">
+        <button type="submit">Agregar</button>
+      </form>
     </section>
     <section id="sec_peliculas">
       <!--Seccion visualizacion de peliculas-->
       <div class="contenedorPeliculas" id="contenedorPeliculas">
-        <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="Creed 3">
-        <h3>Creed III</h3>
-        <p><b>Código:</b>677169</p>
-        <p><b>Título original:</b>Creed III</p>
-        <p><b>Idioma Orignal:</b>en</p>
-        <p><b>Año:</b>23-03-01</p>
-      </div>
-    </section>
-    <section id="form-movie-new">
-      <!--Seccion para agregar una palicula favorita por codigo-->
-      <form action="favorities.html">
-        <input type="text">
-        <button>Agregar a favoritos</button>
-      </form>
+        <div>
+          <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="Creed 3">
+          <h3>Creed III</h3>
+          <p><b>Código: </b>677169</p>
+          <p><b>Título original: </b>Creed III</p>
+          <p><b>Idioma Orignal: </b>en</p>
+          <p><b>Año: </b>23-03-01</p>
+          <button>Agregar a favoritos</button>
+        </div>
+        <div>
+          <img src="https://pics.filmaffinity.com/aShazam_La_furia_de_los_dioses-942384944-large.jpg" alt="shazam">
+          <h3>Shazam: La furia de los Dioses</h3>
+          <p><b>Código: </b>677169</p>
+          <p><b>Título original: </b>Shazam!: Fury of the gods</p>
+          <p><b>Idioma Orignal: </b>en</p>
+          <p><b>Año: </b>23-03-15</p>
+          <button>Agregar a favoritos</button>
+        </div>
+        <div>
+          <img src="https://pics.filmaffinity.com/La_niana_de_la_comuniaon-289909219-large.jpg" alt="comunion">
+          <h3>La niña de la Comunión</h3>
+          <p><b>Código: </b>594767</p>
+          <p><b>Título original: </b>La niña de la comunión</p>
+          <p><b>Idioma Orignal: </b>es</p>
+          <p><b>Año: </b>23-02-10</p>
+          <button>Agregar a favoritos</button>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/el-gato-con-botas-el-ultimo-deseo-poster-2-1671012941.jpg"
+            alt="gatobotas">
+          <h3>El gato con botas: El último deseo</h3>
+          <p><b>Código: </b>316152</p>
+          <p><b>Título original: </b>Puss in Boots: The Last Wish</p>
+          <p><b>Idioma Orignal: </b>en</p>
+          <p><b>Año: </b>22-12-07</p>
+          <button>Agregar a favoritos</button>
+        </div>
+        <div>
+          <img
+            src="https://www.passline.com/imagenes/eventos/super-mario-bros-la-pelicula-doblada-jueves-25-a-las-1400-hrs-177743-rec.jpg"
+            alt="mariobros">
+          <h3>Super Mario Bros: La película</h3>
+          <p><b>Código: </b>316152</p>
+          <p><b>Título original: </b>The Super Mario Bros. Movie</p>
+          <p><b>Idioma Orignal: </b>en</p>
+          <p><b>Año: </b>23-04-05</p>
+          <button>Agregar a favoritos</button>
+        </div>
     </section>
     <section id="sec-messages">
       <!--Seccion para mensajes-->
-      <div class="mensaje-exito">Película agregada con éxito</div>
-      <div class="mensaje-error">Error: La Película seleccionada no se encuentra en la API o se produjo un error al
-        consultar</div>
-      <div class="mensaje-ya-almacenada">La Película ingresada ya se encuentra almacenada</div>
     </section>
     <section id="sec_paginador_peliculas">
       <!--Seccion de Paginacion-->
